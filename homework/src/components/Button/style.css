@@ -1,0 +1,8 @@
+.button-find{
+    gap: 8px;
+    opacity: 1;
+    border-radius: 12px;
+    padding: 16px 32px 16px 32px;
+    background: #7B6EF6;
+    border: 2px solid #7B6EF6
+}
