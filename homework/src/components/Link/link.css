@@ -1,0 +1,12 @@
+.link-group{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.link-text{
+    color: #A8AEBF;
+    text-decoration: none;
+}
+.link-text:hover{
+    color: white
+}
