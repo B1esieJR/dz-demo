@@ -1,13 +1,15 @@
 import './SearchInput.css'
-export default function SearchInput({text, image:ImageComponent, onChange}) {
+import {useState} from "react";
+export default function SearchInput({placeholder,onChange,textValue, image:ImageComponent, ...props}) {
+
     return (
-        <div className="link-group">
+        <div className="search-group">
             {ImageComponent &&
                 <ImageComponent
                     className={'link-icon'}
                 />
             }
-            <input type='text' className={'link-input'} placeholder={text} onChange={onChange}/>
+            <input onChange={onChange} type='text' value={textValue} className={'search-input'} placeholder={placeholder} {...props} />
         </div>
     )
 }

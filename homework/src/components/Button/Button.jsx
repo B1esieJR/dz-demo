@@ -1,6 +1,6 @@
 import './style.css'
-export default function Button({text}) {
+export default function Button({text,onClick}) {
     return (
-        <button className="button-find">{text}</button>
+        <button onClick={onClick} className="button-find">{text}</button>
     )
 }
